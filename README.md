@@ -30,3 +30,9 @@ The application will be accessible at http://localhost:3000 in your web browser.
 
 Building the Application
 To build the application for production, use the following command
+
+Building the Application
+npm run build
+This will generate a production-ready build in the dist directory.
+
+This README file contains all the necessary instructions for setting up, running, and building the React application with Vite.
