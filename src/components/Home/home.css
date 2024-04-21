@@ -1,0 +1,83 @@
+.inner {
+    position: relative;
+    width: 500px;
+}
+
+.button {
+    position: relative;
+    border: 1px dashed black;
+    width: 60%;
+    min-height: 70px;
+}
+
+.pacman {
+    position: absolute;
+    top: -4rem;
+    left: -39px;
+    margin: 40px 10px;
+}
+
+.pacman-top {
+    background-color: yellow;
+    height: 30px;
+    width: 60px;
+    border-radius: 60px 100px 0 0;
+    animation: spin1 0.5s infinite linear;
+}
+
+.pacman-bottom {
+    background-color: yellow;
+    height: 30px;
+    width: 60px;
+    border-radius: 0 0 100px 100px;
+    animation: spin2 0.5s infinite linear;
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-35deg);
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(35deg);
+    }
+}
+
+@keyframes walkBorder {
+    0% {
+        top: -4rem;
+        left: -39px;
+    }
+    16% {
+        top: -4rem;
+        left: calc(100% - 40px - 200px);
+    }
+    32% {
+        top: calc(100% - 40px - 35px);
+        left: calc(100% - 40px - 200px);
+    }
+    48% {
+        top: calc(100% - 40px - 35px);
+        left: -39px;
+    }
+    64% {
+        top: -4rem;
+        left: -39px;
+    }
+    100% {
+        top: -4rem;
+        left: -39px;
+    }
+}
+
+.pacman.walk-border {
+    animation: walkBorder 4s infinite linear;
+}
