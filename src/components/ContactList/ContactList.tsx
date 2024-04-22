@@ -24,7 +24,7 @@ function ContactList({
       );
       setUserToDeleteIndex(null);
       setUserToDeleteName(null);
-      modal.current.close(); // Close the modal after deletion
+      modal.current.close();
     }
   };
 
