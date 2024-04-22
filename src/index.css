@@ -157,6 +157,23 @@ tr:nth-child(even) {
     background-color: gold;
 }
 
+.modal-wrapper {
+    border: navajowhite;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.modal-title,
+.modal-content {
+    text-align: center;
+}
+
+.modal-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 footer {
     position: absolute;
     bottom: 0px;
