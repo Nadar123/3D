@@ -36,10 +36,9 @@ const ThreeDObject: React.FC<ThreeDObjectProps> = ({ shape }) => {
       default:
         return;
     }
-
     const material = new THREE.MeshBasicMaterial({
       color: 0x0000ff,
-      vertexColors: THREE.FaceColors,
+      vertexColors: true,
     });
     const object = new THREE.Mesh(geometry, material);
     scene.add(object);
