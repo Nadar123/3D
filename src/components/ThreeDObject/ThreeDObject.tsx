@@ -1,4 +1,3 @@
-// ThreeDObject.tsx
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
@@ -39,7 +38,7 @@ const ThreeDObject: React.FC<ThreeDObjectProps> = ({ shape }) => {
     }
 
     const material = new THREE.MeshBasicMaterial({
-      color: 0x00ff00,
+      color: 0x0000ff,
       vertexColors: THREE.FaceColors,
     });
     const object = new THREE.Mesh(geometry, material);
@@ -52,7 +51,7 @@ const ThreeDObject: React.FC<ThreeDObjectProps> = ({ shape }) => {
       renderer.render(scene, camera);
     };
 
-    renderer.setSize(window.innerWidth, 500); // Set the height to 500px
+    renderer.setSize(window.innerWidth, 500);
     mountRef.current.appendChild(renderer.domElement);
 
     window.addEventListener('mousemove', onMouseMove, false);

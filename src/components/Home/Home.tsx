@@ -1,12 +1,8 @@
-import React, { useRef, useState, useEffect } from 'react';
-import faker from 'faker';
+import { useState, useEffect } from 'react';
+import { faker } from '@faker-js/faker/locale/en';
 import UserList from '../UserList/UserList';
 import UserCards from '../UserCards/UserCards';
 import ThreeDObject from '../ThreeDObject/ThreeDObject';
-
-type ThreeDObjectProps = {
-  shape?: 'rectangle' | 'triangle' | 'circle';
-};
 
 type User = {
   id: string;
@@ -26,11 +22,9 @@ function App() {
       id: faker.datatype.uuid(),
       username: `${faker.name.firstName()} ${faker.name.lastName()}`,
       nickname: faker.internet.userName(),
-      photo: 'https://avatars.githubusercontent.com/u/97165289',
+      photo: faker.image.avatar(),
     }));
-
     setUsers(newUsers);
-    console.log(newUsers);
   }, []);
 
   return (
