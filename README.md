@@ -9,4 +9,15 @@ This is a React application built with TypeScript. It features 3D animations usi
 
 ## Setup
 
-To run this project, install it locally using npm:
+This project uses Vite for its build tool. Follow these steps to run it locally:
+
+1. First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/Nadar123/3d.git
+cd 3d
+
+npm install
+
+npm run dev
+```
