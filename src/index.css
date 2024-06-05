@@ -102,6 +102,31 @@ nav ul li .active {
     text-align: center;
 }
 
+.btn {
+    width: 50%;
+    margin: 10px 6px 16px 6px;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.form-group {
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+}
+
+.form-control {
+    margin: 10px;
+    padding: 10px 20px;
+}
+
 .form-action .input-action {
     margin: 10px;
 }
@@ -119,6 +144,12 @@ nav ul li .active {
 
 .submitform:hover {
     background-color: #fff;
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 12px;
 }
 
 table {
@@ -174,17 +205,9 @@ tr:nth-child(even) {
     align-items: center;
 }
 
-footer {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    width: 100%;
-    min-height: 80px;
-    background-color: #333;
-    color: #fff;
+.error-message {
+    font-size: 12px;
+    color: red;
 }
 
 
@@ -234,6 +257,7 @@ nav {
 }
 
 .hamburger {
+    display: none;
     width: 30px;
     height: 3px;
     background-color: #000;
@@ -259,7 +283,14 @@ nav {
     bottom: -8px;
 }
 
+.open .hamburger {
+    background-color: transparent;
+}
+
 @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
     .menu {
         flex-direction: column;
         position: absolute;
@@ -310,3 +341,42 @@ nav {
         left: -39px;
     }
 }
+
+
+/*css*/
+
+
+/* 
+header {
+    display: flex;
+    justify-content: space-between;
+    background: aliceblue;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.user-info .name {
+    font-weight: bold;
+}
+
+.select-box {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.form-action {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.action-btn {
+    background-color: aquamarine; 
+    border-radius: 20px;
+}*/
